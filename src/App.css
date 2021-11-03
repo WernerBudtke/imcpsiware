@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+    font-size: 1vw;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root{
+    min-height: 100vh;
+    background-color: black;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#root, main, form, form div{
+    display: flex;
 }
-
-.App-link {
-  color: #61dafb;
+header, footer{
+    color: white;
+    background-color: rgb(30, 30, 121);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header, footer, input{
+    text-align: center;
+}
+header{
+    font-size: 2.2rem;
+}
+main, form, form div{
+    align-items: center;
+}
+main{
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+footer, form, input, button, #imcResultContainer{
+    font-size: 2rem;
+}
+input{
+    margin-left: 1rem;
+}
+form, main, #root{
+    flex-direction: column;
+}
+form div{
+    width: 100%;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+#imcResultContainer, form{
+    background-color: rgba(245, 245, 245, 0.75);
+}
+#imcResultContainer, form, button{
+    padding: 1rem;
+}
+#imcResultContainer{
+    margin-top: 1rem;
+}
+button{
+    background-color: grey;
 }
