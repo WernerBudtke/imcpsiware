@@ -15,7 +15,7 @@ const Main = () => {
             [e.target.name] : e.target.value
         })
     }
-    const calculateImc = (weight, height) => parseFloat(weight) / (parseFloat(height) ^ 2)
+    const calculateImc = (weight, height) => parseFloat(weight) / (parseFloat(height) ** 2)
     const submitHandler = (e) => {
         e.preventDefault()
         const {weight, height, name} = newPerson
